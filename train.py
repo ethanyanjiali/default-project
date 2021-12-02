@@ -9,6 +9,7 @@ import util
 from model import *
 from trainer import Trainer
 
+# test 1234
 
 def parse_args():
     r"""
@@ -145,6 +146,10 @@ def train(args):
         net_d = Discriminator64()
     else:
         raise NotImplementedError(f"Unsupported image size '{args.im_size}'.")
+
+    print("Let's use", torch.cuda.device_count(), "GPUs!")
+    net_g = nn.DataParallel(net_g)
+    net_d = nn.DataParallel(net_d)
 
     # Configure optimizers
     opt_g = optim.Adam(net_g.parameters(), lr, betas)

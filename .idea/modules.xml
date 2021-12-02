@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../StyleGAN.pytorch/.idea/StyleGAN.pytorch.iml" filepath="$PROJECT_DIR$/../StyleGAN.pytorch/.idea/StyleGAN.pytorch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/default-project.iml" filepath="$PROJECT_DIR$/.idea/default-project.iml" />
+    </modules>
+  </component>
+</project>

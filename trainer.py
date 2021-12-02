@@ -80,6 +80,10 @@ def compute_loss_d(net_g, net_d, reals, z, loss_func_d):
     fakes = net_g(z).detach()
     fake_preds = net_d(fakes).view(-1)
     loss_d = loss_func_d(real_preds, fake_preds)
+    # real_preds [64]
+    # fakes [64, 3, 32, 32]
+    # fake_preds [64]
+    # loss_d []
 
     return loss_d, fakes, real_preds, fake_preds
 
@@ -332,6 +336,7 @@ class Trainer:
             for data, _ in pbar:
 
                 # Training step
+                # reals [64, 3, 32, 32], z [64, 128]
                 reals, z = prepare_data_for_gan(data, self.nz, self.device)
                 loss_d = self._train_step_d(reals, z)
                 if self.step % repeat_d == 0:

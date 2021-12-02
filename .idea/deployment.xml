@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ethan-pytorch-3" remoteFilesAllowedToDisappearOnAutoupload="false" showNewOnSourceInSync="false">
+    <serverData>
+      <paths name="ethan-pytorch-3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/default-project" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/StyleGAN.pytorch" local="$PROJECT_DIR$/../StyleGAN.pytorch" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
